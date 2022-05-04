@@ -435,6 +435,9 @@ const Home = () => {
             }}
           >
             gas limit的設定值為 {CONFIG.GAS_LIMIT}. 建議設定不要低於設定值.
+            <s.SpacerSmall />
+            Built with <span role="img" aria-label="love">♥️</span> by 
+            <a target="_blank" rel="noopener noreferrer" href="https://nsnft.io">@nsnft.io</a>
           </s.TextDescription>
         </s.Container>
       </s.Container>
