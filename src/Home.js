@@ -424,8 +424,8 @@ const Home = () => {
               color: "var(--primary-text)",
             }}
           >
-            請確認您錢包的網路設定正確, 並連線至 ({CONFIG.NETWORK.NAME} Mainnet).
-            請注意: 若已執行鑄造程序, 系統無法you cannot undo this action.
+            請確認錢包使用正確網路及帳戶設定.[注意] 當購買行為發生是無法回復. 系統使用 ({CONFIG.NETWORK.NAME} Mainnet).
+            
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
