@@ -219,7 +219,7 @@ const Home = () => {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
           </s.Container>
-          <s.SpacerLarge />
+          <s.SpacerMedium />
           <s.Container
             flex={2}
             jc={"center"}
@@ -304,7 +304,7 @@ const Home = () => {
                   1個 {CONFIG.SYMBOL} 成本為 {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
-                <s.SpacerXSmall />
+                <s.SpacerSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
@@ -368,7 +368,7 @@ const Home = () => {
                       >
                         -
                       </StyledRoundButton>
-                      <s.SpacerMedium />
+                      <s.SpacerSmall />
                       <s.TextDescription
                         style={{
                           textAlign: "center",
@@ -405,9 +405,9 @@ const Home = () => {
                 )}
               </>
             )}
-            <s.SpacerMedium />
+            <s.SpacerSmall />
           </s.Container>
-          <s.SpacerLarge />
+          <s.SpacerMedium />
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
@@ -416,7 +416,7 @@ const Home = () => {
             />
           </s.Container>
         </ResponsiveWrapper>
-        <s.SpacerMedium />
+        <s.SpacerSmall />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription
             style={{
