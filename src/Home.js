@@ -434,9 +434,7 @@ const Home = () => {
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            gas limit的設定值為 {CONFIG.GAS_LIMIT}. 建議設定不要低於設定值.
           </s.TextDescription>
         </s.Container>
       </s.Container>
