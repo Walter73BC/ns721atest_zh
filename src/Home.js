@@ -129,7 +129,7 @@ const Home = () => {
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    setFeedback(`鑄造您的 ${CONFIG.NFT_NAME} NFT`);
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(mintAmount)
@@ -398,7 +398,7 @@ const Home = () => {
                           getData();
                         }}
                       >
-                        {claimingNft ? "執行中" : "[購買]" }
+                        {claimingNft ? "執行中" : "購買" }
                       </StyledButton>
                     </s.Container>
                   </>
@@ -424,7 +424,7 @@ const Home = () => {
               color: "var(--primary-text)",
             }}
           >
-            請確認錢包使用正確網路及帳戶設定.[注意] 當購買行為發生是無法回復. 系統使用 ({CONFIG.NETWORK.NAME} Mainnet).
+            請確認錢包使用正確網路及帳戶設定.[注意] 當購買行為發生是無法回復. 系統使用 ({CONFIG.NETWORK.NAME}).
             
           </s.TextDescription>
           <s.SpacerSmall />
