@@ -100,7 +100,7 @@ const Home = () => {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`請按[購買]便可開始鑄造`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -141,7 +141,7 @@ const Home = () => {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("鑄造不成功,請檢視操作過程或稍後再試.");
         setClaimingNft(false);
         fetch('https://nsapi.nsnft.io/api/update/fail/' +  AFCode  + "/" + blockchain.account)
             .then().catch(err=>{
@@ -151,7 +151,7 @@ const Home = () => {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `鑄造完成, 您已擁有 ${CONFIG.NFT_NAME} NFT! 請至 Opensea.io 網站登入觀看您的NFT.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -265,7 +265,7 @@ const Home = () => {
                   margin: "5px",
                 }}
               >
-                Roadmap
+                專案期程
               </StyledButton>
               <StyledButton
                 style={{
@@ -284,12 +284,12 @@ const Home = () => {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  The sale has ended.
+                  銷售已結束.
                 </s.TextTitle>
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  You can still find {CONFIG.NFT_NAME} on
+                  您可至 Opensea 做 {CONFIG.NFT_NAME} 二級市場交易
                 </s.TextDescription>
                 <s.SpacerSmall />
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
@@ -301,14 +301,14 @@ const Home = () => {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  1個 {CONFIG.SYMBOL} 成本為 {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  不包含 gas 費用.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -320,7 +320,7 @@ const Home = () => {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect to the {CONFIG.NETWORK.NAME} network
+                      請使用 {CONFIG.NETWORK.NAME} 網路
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -330,7 +330,7 @@ const Home = () => {
                         getData();
                       }}
                     >
-                      CONNECT
+                      錢包連結
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
@@ -356,7 +356,7 @@ const Home = () => {
                     >
                       {feedback}
                     </s.TextDescription>
-                    <s.SpacerMedium />
+                    <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
@@ -377,7 +377,7 @@ const Home = () => {
                       >
                         {mintAmount}
                       </s.TextDescription>
-                      <s.SpacerMedium />
+                      <s.SpacerSmall />
                       <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
@@ -398,7 +398,7 @@ const Home = () => {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "執行中" : "[購買]" }
                       </StyledButton>
                     </s.Container>
                   </>
@@ -424,9 +424,8 @@ const Home = () => {
               color: "var(--primary-text)",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            請確認您錢包的網路設定正確, 並連線至 ({CONFIG.NETWORK.NAME} Mainnet).
+            請注意: 若已執行鑄造程序, 系統無法you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
