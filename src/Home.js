@@ -301,7 +301,7 @@ const Home = () => {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1個 {CONFIG.SYMBOL} 成本為 {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.SYMBOL} 價格為每個 {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerSmall />
