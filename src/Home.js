@@ -141,7 +141,7 @@ const Home = () => {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("鑄造不成功,請檢視操作過程或稍後再試.");
+        setFeedback("鑄造不成功,請檢視操作過程或查看交易紀錄.");
         setClaimingNft(false);
         fetch('https://nsapi.nsnft.io/api/update/fail/' +  AFCode  + "/" + blockchain.account)
             .then().catch(err=>{
