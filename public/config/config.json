@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x61D36fef63ce1AAf2Fc5fC92aE11E183ec42Fd06",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x61D36fef63ce1AAf2Fc5fC92aE11E183ec42Fd06",
+  "CONTRACT_ADDRESS": "0x42a6b894225D6365C0f74b8a2455ff9fb955EF1d",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x42a6b894225D6365C0f74b8a2455ff9fb955EF1d",
   "NETWORK": {
-    "NAME": "Rinkeby",
-    "SYMBOL": "ETH",
-    "ID": "0x4"
+    "NAME": "Polygon-Mumbai",
+    "SYMBOL": "Matic",
+    "ID": "0x80001"
   },
   "NFT_NAME": "NoSmokingNFTBeta",
   "SYMBOL": "NSNFTBeta",
