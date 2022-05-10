@@ -4,12 +4,12 @@
   "NETWORK": {
     "NAME": "Polygon-Mumbai",
     "SYMBOL": "Matic",
-    "ID": "80001"
+    "ID": 137
   },
   "NFT_NAME": "NoSmokingNFTBeta",
   "SYMBOL": "NSNFTBeta",
   "MAX_SUPPLY": 1000,
-  "WEI_COST": 5000000000000000,
+  "WEI_COST": 50000000000000000,
   "DISPLAY_COST": 0.05,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
