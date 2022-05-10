@@ -4,7 +4,7 @@
   "NETWORK": {
     "NAME": "Polygon-Mumbai",
     "SYMBOL": "Matic",
-    "ID": "0x80001"
+    "ID": 80001
   },
   "NFT_NAME": "NoSmokingNFTBeta",
   "SYMBOL": "NSNFTBeta",
