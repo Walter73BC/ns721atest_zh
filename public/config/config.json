@@ -9,10 +9,10 @@
   "NFT_NAME": "NoSmokingNFTBeta",
   "SYMBOL": "NSNFTBeta",
   "MAX_SUPPLY": 1000,
-  "WEI_COST": 2500000000000000,
-  "DISPLAY_COST": 0.025,
+  "WEI_COST": 5000000000000000,
+  "DISPLAY_COST": 0.05,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/nosmokingnftbeta1",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/nosmokingnftbeta1-v2",
   "SHOW_BACKGROUND": true
 }
