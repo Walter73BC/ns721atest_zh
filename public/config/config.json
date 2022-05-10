@@ -1,6 +1,6 @@
 {
   "CONTRACT_ADDRESS": "0x42a6b894225D6365C0f74b8a2455ff9fb955EF1d",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x42a6b894225D6365C0f74b8a2455ff9fb955EF1d",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/token/0x42a6b894225D6365C0f74b8a2455ff9fb955EF1d",
   "NETWORK": {
     "NAME": "Polygon-Mumbai",
     "SYMBOL": "Matic",
