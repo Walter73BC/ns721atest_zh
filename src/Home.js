@@ -235,7 +235,7 @@ const Home = () => {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 36,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
