@@ -6,8 +6,8 @@
     "SYMBOL": "ETH",
     "ID": "0x4"
   },
-  "NFT_NAME": "NoSmokingNFTBeta",
-  "SYMBOL": "NSNFTBeta",
+  "NFT_NAME": "NoSmokingNFTAfa",
+  "SYMBOL": "NSNFTAfa",
   "MAX_SUPPLY": 1000,
   "WEI_COST": 25000000000000000,
   "DISPLAY_COST": 0.025,
