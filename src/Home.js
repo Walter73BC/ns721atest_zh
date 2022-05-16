@@ -259,7 +259,7 @@ const Home = () => {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://www.nsnft.io/#/home", "_blank");
+                  window.open("/config/roadmap.pdf", "_blank");
                 }}
                 style={{
                   margin: "5px",
