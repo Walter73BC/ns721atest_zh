@@ -296,7 +296,7 @@ const Home = () => {
               </StyledButton>
             </span>
             <s.SpacerSmall />
-            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY || data.mintPhase === "4" ? (
               <>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -312,6 +312,21 @@ const Home = () => {
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                   {CONFIG.MARKETPLACE}
                 </StyledLink>
+              </>
+            ) : (
+			[data.mintPhase === "0" || data.mintPhase === "1" ? (
+              <>
+                <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  鑄造尚未開始.
+                </s.TextTitle>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  請稍待等後Presale或PublicSale階段開啟.
+                </s.TextDescription>
+                <s.SpacerSmall />
               </>
             ) : (
               <>
@@ -419,7 +434,7 @@ const Home = () => {
                       </StyledButton>
                     </s.Container>
                   </>
-                )}
+                )])}
               </>
             )}
             <s.SpacerSmall />
