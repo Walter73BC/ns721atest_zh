@@ -202,6 +202,23 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, [blockchain.account]);
+  
+  const nowPhase = () => {
+    switch(data.mintPhase){
+	    case "0":
+		    return "暫停";
+	    case "1":
+		    return "空投";
+	    case "2":
+		    return "Presale";
+	    case "3":
+		    return "PublicSale";
+	    case "4":
+		    return "結束";
+	    default:
+		    return "";
+	  }
+  };
 
   return (
     <s.Screen>
@@ -240,7 +257,7 @@ const Home = () => {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              鑄造階段 {nowPhase()}
             </s.TextTitle>
             <s.TextDescription
               style={{
