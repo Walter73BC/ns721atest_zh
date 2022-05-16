@@ -324,7 +324,7 @@ const Home = () => {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  請稍待等後Presale或PublicSale階段開啟.
+                  請稍待等後[Presale]或[PublicSale]階段開啟.
                 </s.TextTitle>
                 <s.SpacerSmall />
               </>
