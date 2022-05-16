@@ -434,9 +434,9 @@ const Home = () => {
                       </StyledButton>
                     </s.Container>
                   </>
-                )])}
+                )}
               </>
-            )}
+            )])}
             <s.SpacerSmall />
           </s.Container>
           <s.SpacerMedium />
