@@ -303,11 +303,11 @@ const Home = () => {
                 >
                   銷售已結束.
                 </s.TextTitle>
-                <s.TextDescription
+                <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   您可至 Opensea 做 {CONFIG.NFT_NAME} 二級市場交易
-                </s.TextDescription>
+                </s.TextTitle>
                 <s.SpacerSmall />
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                   {CONFIG.MARKETPLACE}
