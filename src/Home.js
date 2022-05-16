@@ -321,11 +321,11 @@ const Home = () => {
                 >
                   鑄造尚未開始.
                 </s.TextTitle>
-                <s.TextDescription
+                <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   請稍待等後Presale或PublicSale階段開啟.
-                </s.TextDescription>
+                </s.TextTitle>
                 <s.SpacerSmall />
               </>
             ) : (
