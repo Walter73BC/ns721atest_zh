@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xDe4Ea80C0455d3520C04d89A4614EBAE93d89981",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xDe4Ea80C0455d3520C04d89A4614EBAE93d89981",
+  "CONTRACT_ADDRESS": "0x39F83a0Dc5f756799841e312DBA25Bb905F5c4b9",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x39F83a0Dc5f756799841e312DBA25Bb905F5c4b9",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
     "ID": "0x4"
   },
-  "NFT_NAME": "NoSmokingNFTAfa",
-  "SYMBOL": "NSNFTAfa",
-  "MAX_SUPPLY": 1000,
-  "WEI_COST": 50000000000000000,
-  "DISPLAY_COST": 0.05,
+  "NFT_NAME": "NoSmokingNFTGamma",
+  "SYMBOL": "NSNFTGama",
+  "MAX_SUPPLY": 6600,
+  "WEI_COST": 58000000000000000,
+  "DISPLAY_COST": 0.058,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/nosmokingnftafa",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/nosmokingnftgamma",
   "SHOW_BACKGROUND": true
 }
