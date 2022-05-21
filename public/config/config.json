@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xB5A22455Ef31109fdB621d945D22941E4cD9d590",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xB5A22455Ef31109fdB621d945D22941E4cD9d590",
+  "CONTRACT_ADDRESS": "0x297539d4AC2E0AFD9e96f1B77155733069b5F28F",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x297539d4AC2E0AFD9e96f1B77155733069b5F28F",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "Mainnet",
     "SYMBOL": "ETH",
-    "ID": "0x4"
+    "ID": "0x1"
   },
-  "NFT_NAME": "NoSmokingNFTDelta",
-  "SYMBOL": "NSNFTDTA",
-  "MAX_SUPPLY": 6600,
+  "NFT_NAME": "NoSmokingNFT",
+  "SYMBOL": "NSNFT",
+  "MAX_SUPPLY": 5000,
   "WEI_COST": 58000000000000000,
   "DISPLAY_COST": 0.058,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/nosmokingnft",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/nosmokingnft",
   "SHOW_BACKGROUND": true
 }
