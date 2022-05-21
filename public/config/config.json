@@ -2,7 +2,7 @@
   "CONTRACT_ADDRESS": "0x297539d4AC2E0AFD9e96f1B77155733069b5F28F",
   "SCAN_LINK": "https://etherscan.io/token/0x297539d4AC2E0AFD9e96f1B77155733069b5F28F",
   "NETWORK": {
-    "NAME": "Mainnet",
+    "NAME": "Eth-MainNet",
     "SYMBOL": "ETH",
     "ID": "0x1"
   },
