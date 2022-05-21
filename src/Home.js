@@ -276,7 +276,7 @@ const Home = () => {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
+                  window.open("/config/roadmap_zh.pdf", "_blank");
                 }}
                 style={{
                   margin: "5px",
