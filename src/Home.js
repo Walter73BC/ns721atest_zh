@@ -259,7 +259,7 @@ const Home = () => {
             >
               鑄造階段 {nowPhase()}
             </s.TextTitle>
-            <s.TextDescription
+            <s.TextTitle
               style={{
                 textAlign: "center",
                 color: "var(--primary-text)",
@@ -268,7 +268,7 @@ const Home = () => {
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
-            </s.TextDescription>
+            </s.TextTitle>
             <span
               style={{
                 textAlign: "center",
