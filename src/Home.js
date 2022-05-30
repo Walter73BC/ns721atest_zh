@@ -210,9 +210,9 @@ const Home = () => {
 	    case "1":
 		    return "空投";
 	    case "2":
-		    return "Presale";
+		    return "預售";
 	    case "3":
-		    return "PublicSale";
+		    return "公售";
 	    case "4":
 		    return "結束";
 	    default:
